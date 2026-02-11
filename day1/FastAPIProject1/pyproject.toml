@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastapiproject1"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.14"
+fastapi = "^0.128.7"
+uvicorn = "^0.40.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "24.10.0"
+ruff = "0.8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+# Ruff가 참고할 파이썬 버전을 명시하여 에러를 방지합니다.
+target-version = "py314"
+line-length = 120
